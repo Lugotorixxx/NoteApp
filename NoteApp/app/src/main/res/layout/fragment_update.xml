@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/arkaplan"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.UpdateFragment">
+
+        <EditText
+            android:id="@+id/updateTitle_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="88dp"
+            android:background="@drawable/border_bg"
+            android:elevation="5dp"
+            android:enabled="false"
+            android:gravity="left"
+            android:hint="Başlık"
+            android:inputType="textPersonName"
+            android:minWidth="200dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/updateTopic_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="28dp"
+            android:background="@drawable/border_bg"
+            android:elevation="5dp"
+            android:ems="10"
+            android:enabled="false"
+            android:gravity="top"
+            android:hint="Not Yazınız"
+            android:minHeight="300dp"
+            android:inputType="text|textMultiLine"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateTitle_et" />
+
+        <TextView
+            android:id="@+id/updateDate_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="28dp"
+            android:padding="6dp"
+            android:elevation="5dp"
+            android:background="@drawable/border_bg"
+            android:text="10.11.1995"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/update_btn"
+            style="@style/myButton"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:text="Güncelle"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateTopic_et" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
